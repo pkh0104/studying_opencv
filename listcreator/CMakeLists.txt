@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)
+set ( CMAKE_CXX_STANDARD 11 )
+project( listcreator )
+find_package( OpenCV REQUIRED ) 
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( listcreator imagelist_creator.cpp )
+target_link_libraries( listcreator ${OpenCV_LIBS} )
