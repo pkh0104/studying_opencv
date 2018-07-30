@@ -1,3 +1,0 @@
-/home/kihyeon/study/studying_opencv/video/CMakeFiles/edit_cache.dir
-/home/kihyeon/study/studying_opencv/video/CMakeFiles/rebuild_cache.dir
-/home/kihyeon/study/studying_opencv/video/CMakeFiles/video.dir
