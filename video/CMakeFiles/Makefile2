@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/swm/study/video
+CMAKE_SOURCE_DIR = /home/kihyeon/study/studying_opencv/video
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/swm/study/video
+CMAKE_BINARY_DIR = /home/kihyeon/study/studying_opencv/video
 
 #=============================================================================
 # Target rules for target CMakeFiles/video.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/swm/study/video
 CMakeFiles/video.dir/all:
 	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/depend
 	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/swm/study/video/CMakeFiles --progress-num=1,2 "Built target video"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kihyeon/study/studying_opencv/video/CMakeFiles --progress-num=1,2 "Built target video"
 .PHONY : CMakeFiles/video.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/video.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/video.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swm/study/video/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kihyeon/study/studying_opencv/video/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/video.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/swm/study/video/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kihyeon/study/studying_opencv/video/CMakeFiles 0
 .PHONY : CMakeFiles/video.dir/rule
 
 # Convenience name for target.

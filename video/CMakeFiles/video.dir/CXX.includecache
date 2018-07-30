@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/swm/study/video/main.cpp
+/home/kihyeon/study/studying_opencv/video/main.cpp
 opencv2/opencv.hpp
 -
 opencv2/imgcodecs.hpp

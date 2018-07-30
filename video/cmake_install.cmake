@@ -1,4 +1,4 @@
-# Install script for directory: /home/swm/study/video
+# Install script for directory: /home/kihyeon/study/studying_opencv/video
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/swm/study/video/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kihyeon/study/studying_opencv/video/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
