@@ -37,8 +37,7 @@ const char * usage =
 "</images>\n"
 "</opencv_storage>\n";
 
-
-
+//#define FULL_HD
 
 const char* liveCaptureHelp =
     "When the live video from camera is used as input, the following hot-keys may be used:\n"
@@ -397,8 +396,13 @@ int main( int argc, char** argv )
     if( !imageList.empty() )
         nframes = (int)imageList.size();
 
-    if( capture.isOpened() )
+    if( capture.isOpened() ){
+#ifdef FULL_HD
+        capture.set(CV_CAP_PROP_FRAME_WIDTH, 1920);
+        capture.set(CV_CAP_PROP_FRAME_HEIGHT, 1080);
+#endif
         printf( "%s", liveCaptureHelp );
+    }
 
     namedWindow( "Image View", 1 );
 
@@ -412,6 +416,9 @@ int main( int argc, char** argv )
             Mat view0;
             capture >> view0;
             view0.copyTo(view);
+#ifdef FULL_HD
+            resize(view, view, Size(1280, 720));
+#endif
         }
         else if( i < (int)imageList.size() )
             view = imread(imageList[i], 1);

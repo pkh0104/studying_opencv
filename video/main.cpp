@@ -18,6 +18,8 @@
 #include <iostream>
 #include <stdio.h>
 
+//#define FULL_HD
+
 using namespace cv;
 using namespace std;
 
@@ -37,8 +39,13 @@ namespace {
     }
 
     int process(VideoCapture& capture) {
+#ifdef FULL_HD
+        capture.set(CV_CAP_PROP_FRAME_WIDTH, 1920);
+        capture.set(CV_CAP_PROP_FRAME_HEIGHT, 1080);
+#else
         capture.set(CV_CAP_PROP_FRAME_WIDTH, 1280);
         capture.set(CV_CAP_PROP_FRAME_HEIGHT,  720);
+#endif
         int n = 0;
         char filename[200];
         string window_name = "video | q or esc to quit";
@@ -51,7 +58,9 @@ namespace {
             if (frame.empty())
                 break;
 
-            //resize(frame, frame, Size(1280, 720));
+#ifdef FULL_HD
+            resize(frame, frame, Size(1280, 720));
+#endif
             imshow(window_name, frame);
             char key = (char)waitKey(30); //delay N millis, usually long enough to display and capture input
 
