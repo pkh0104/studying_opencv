@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)
+set ( CMAKE_CXX_STANDARD 11 )
+project( ldw )
+find_package( OpenCV REQUIRED ) 
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( ldw main.cpp )
+target_link_libraries( ldw ${OpenCV_LIBS} )
